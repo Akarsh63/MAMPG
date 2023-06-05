@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Header & Footer</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="headerandfooter.css">
+            <script src="https://kit.fontawesome.com/e3654d5171.js" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+        </head>
+        <body>
+            <header>
+                <div class="header">
+                    <div class="header-top-container">
+                         <img class="logo" src="https://mamcollegeofpharmacy.ac.in/images/logo1.png" alt="MAMPG Logo"/>
+                         <div class="clginfo">
+                             <div class="heading">MEDARAMETLA ANJAMMA MASTAN RAO COLLEGE OF PG</div>
+                             <div class="subheading"> 
+                                 <p>Recognized by AICTE, Affiliated to Acharya Nagarjuns University</p>
+                                 <p>Kesanupalli Village, Narasaraopet(m), Palnadu(Dt), Andhra Pradesh.</p>
+                             </div>
+                         </div>
+                    </div>
+                 </div>
+
+                 <nav class="header-top-navbar">
+                    <div class="nav-responsive-menu" id="menu1">
+                        <p>Menu</p>
+                        <div>
+                            <a onclick="menu_show()" id="menudropicon"><i class="fa-solid fa-bars" style="color: #fff;"></i></a>
+                            <a class="cross"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></a>
+                        </div>
+                        
+                    </div>
+                    <ul class="main-nav" id="menu2">
+                        <li class="main-nav-items" ><a href="#" class="main-nav-items-names">HOME</a></li>
+                        <li class="main-nav-items" id="drop1" onclick="dropmenu_show(this.id)">
+                            <a href="#" class="main-nav-items-names">ABOUT US <ion-icon name="chevron-down-outline" class="nav-drop-icons"></ion-icon></a>
+                            <ul class="sub-nav" id="sub-nav">
+                                <li><a href="#">About MAM</a></li>
+                                <li><a href="#">Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-items"><a href="#" class="main-nav-items-names">COURSES</a></li>
+                        <li class="main-nav-items"><a href="#" class="main-nav-items-names">FACULTY</a></li>
+                        <li class="main-nav-items" id="drop2" onclick="dropmenu_show(this.id)">
+                            <a href="#" class="main-nav-items-names">FACILITIES <ion-icon name="chevron-down-outline" class="nav-drop-icons"></ion-icon></a>
+                            <ul class="sub-nav"> 
+                                <li><a href="#">Infrastucture</a></li>
+                                <li><a href="#">Library</a></li>
+                                <li><a href="#">Transport</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-items"><a href="#" class="main-nav-items-names">GALLERY</a></li>
+                        <li class="main-nav-items"><a href="#" class="main-nav-items-names">ANNOUNCEMENTS</a></li>
+                        <li class="main-nav-items"><a href="#" class="main-nav-items-names">CONTACT</a></li>
+                      </ul>
+                </nav>
+            </header>
+           
+            <footer>
+                    <div class='footer_about'>
+                        <img class="logof" src="https://mamcollegeofpharmacy.ac.in/images/logo1.png" alt="MAMPG Logo"/>
+                        <h1 class='footn'>M.A.M College Of P.G</h1>
+                    </div>
+                    <div class='footer'>
+                        <div class='footlinks'>
+                            <p class='heading_footer'>Get in Touch with us</p>
+                            <ul>
+                                <li class='lilist'><a href="#"><ion-icon name="call-outline" class="footicons"></ion-icon></i>6301425803 / 9951420612</a></li>
+                                <li class='lilist'><a href="#"><ion-icon name="mail-outline" class="footicons"></ion-icon>prins2mam@gmail.com</a></li>
+                                <li class='lilist'><a href="#"><ion-icon name="location-outline" class="footicons"></ion-icon>Kesanupalli, Narasaraopet, Andhra Pradesh 522601</a></li>
+                            </ul>
+                        </div>
+
+                        <div class='footlinks'>
+                            <p class='heading_footer'>Quick Links</p>
+                            <ul class='ulist'>
+                                <li class='lilist'><a href="#">Home</a></li>
+                                <li class='lilist'><a href="#">About us</a></li>
+                                <li class='lilist'><a href="#">courses</a></li>
+                                <li class='lilist'><a href="#">Faculty</a></li>
+                                <li class='lilist'><a href="#">Facilities</a></li>
+                                <li class='lilist'><a href="#">Gallery</a></li>
+                                <li class='lilist'><a href="#">Announcements</a></li>
+
+                            </ul>
+                        </div>
+                        
+                        <div clase='footlinks'>
+                            <p class='heading_footer'>Social Links</p>
+                            <ul>
+                                <li class='lilist'><a href="#">Facebook</a></li>
+                                <li class='lilist'><a href="#">Instagram</a></li>
+                                <li class='lilist'><a href="#">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </footer>
+
+        <script src="headerandfooter.js"></script>
+        </body>
+    </html>
