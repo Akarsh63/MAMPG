@@ -1,0 +1,51 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+}
+
+.marquee {
+    font-weight: 400;
+    /*border-top:1px solid #C3073F;
+    border-bottom:2px solid #C3073F;*/
+    padding-top: 5px;
+    font-size: 150%;
+}
+
+.headertext {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    padding: 15px 20px;
+    margin: 0;
+    /*min-height:110px;*/
+}
+
+.headertextheading {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.headertextspan {
+    color: #FFF;
+    text-align: center;
+    font-size: 70%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.headerlogo {
+    margin: 0 0 0 30px;
+    float: left;
+}
+
+@media screen and (max-width: 600px) {
+    .headerlogo {
+        float: none;
+        margin: 10px auto;
+    }
+}
+
