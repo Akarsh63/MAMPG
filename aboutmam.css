@@ -47,14 +47,17 @@ h1 {
     font-weight: bold;
     color: #33455f;
 }
-
+.aboutmamcont{
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+.aboutimg img {width:50%;}
 .aboutimg {
     display: flex;
     justify-content: center;
-    align-items:center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
 }
+
 
 p{
     color: #33455f;
@@ -69,26 +72,17 @@ p{
 ul{
     list-style-type: "*  ";
     list-style-position:initial;
+    padding-inline-start: 15px;
 }
 
 .container{
     padding:10px 50px;
     background-color: #b9b8b8;
-    transition: all 0.3s ease-in-out;
-}
-
-.container:hover{
-    scale:1.03;
 }
 
 .box{
     padding: 10px 50px;
     background-color: #FFF;
-    transition: all 0.3s ease-in-out;
-}
-
-.box:hover{
-    scale: 1.03;
 }
 
 .box1{
@@ -106,12 +100,29 @@ ul{
     transition: all 0.3s ease-in-out;
 }
 
-.ourvission:hover{
-    scale:1.03;
+@media screen and (max-width: 800px) {
+    .aboutimg img {width:95%;}
+    
+p{
+    padding: 20px 20px;
 }
-@media screen and (max-width: 600px) {
-    .headerlogo {
-        float: none;
-        margin: 10px auto;
+
+}
+@media screen and (max-width: 576px) {
+    .aboutmamcont{
+        padding: 0 15px;
     }
+    .aboutimg img {width:100%;}
+p{
+    padding: 15px 10px;
+}
+.ourvission{
+    padding: 10px 15px;
+}
+.box{
+    padding: 10px 15px;
+}
+.container{
+    padding:10px 15px;
+}
 }
