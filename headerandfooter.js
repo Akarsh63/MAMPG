@@ -73,3 +73,20 @@ document.addEventListener("click", function(event) {
 function dropmenu_show(id) {
     document.getElementById(id).classList.toggle("show");
   }
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutUs = document.getElementById("about-us");
+    const acads=document.getElementById("acads");
+    const facilities=document.getElementById("facilities");
+    const sublistabout = aboutUs.querySelector(".sublist");
+    aboutUs.addEventListener("click", function() {
+      sublistabout.style.display = sublistabout.style.display === "none" ? "flex" : "none";
+    });
+    const sublistacads = acads.querySelector(".sublist");
+    acads.addEventListener("click", function() {
+      sublistacads.style.display = sublistacads.style.display === "none" ? "flex" : "none";
+    });
+    const sublistfac = facilities.querySelector(".sublist");
+    facilities.addEventListener("click", function() {
+      sublistfac.style.display = sublistfac.style.display === "none" ? "flex" : "none";
+    });
+  });
