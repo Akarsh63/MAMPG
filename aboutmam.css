@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&family=Cinzel+Decorative&family=EB+Garamond&family=Golos+Text:wght@500&family=IBM+Plex+Sans:wght@300;400&family=Inter:wght@400;500&family=Jockey+One&family=Lato:ital@0;1&family=Lobster&family=Martian+Mono:wght@300&family=Montserrat&family=Playfair:ital@1&family=Poppins&family=Rajdhani:wght@600&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,300;1,300&family=Source+Serif+4&family=Space+Grotesk&family=Work+Sans:wght@300;400;500;600&display=swap');
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -41,17 +43,26 @@ body {
     margin: 0 0 0 30px;
     float: left;
 }
-
-h1 {
+.aboutmam {
+    display: flex;
+    justify-content: center;
+}
+.aboutmam span {
     text-align: center;
     font-weight: bold;
     color: #33455f;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px auto 30px auto;
 }
 .aboutmamcont{
     padding: 0 50px;
     margin-bottom: 30px;
 }
-.aboutimg img {width:50%;}
+.aboutimg img {
+    width:65%;
+    margin-bottom: 40px;
+}
 .aboutimg {
     display: flex;
     justify-content: center;
@@ -59,14 +70,14 @@ h1 {
 }
 
 
-p{
+.p{
     color: #33455f;
     text-align: justify;
     font-weight: inherit;
     text-transform: none;
-    line-height: 1.5em;
-    font-size: 125%;
-    padding: 20px 50px;
+    padding: 20px 20px;
+    margin: 10px auto;
+    font-size: 20px;
 }
 
 ul{
@@ -78,6 +89,7 @@ ul{
 .container{
     padding:10px 50px;
     background-color: #b9b8b8;
+    margin: 30px auto;
 }
 
 .box{
@@ -98,8 +110,12 @@ ul{
     background-color: #b9b8b8;
     padding: 10px 50px;
     transition: all 0.3s ease-in-out;
+    margin: 30px auto;
 }
-
+.h1 {
+    margin: 15px 0;
+    padding: 0;
+}
 @media screen and (max-width: 800px) {
     .aboutimg img {width:95%;}
     
