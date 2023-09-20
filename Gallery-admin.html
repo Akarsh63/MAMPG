@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Gallery-admin.css" />
+    
+    <script
+      src="https://kit.fontawesome.com/17305c1313.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clgname">
+        <img src="..\photos\image 1.png" alt="Logo" />
+        <div class="header-right">
+          <span class="p">Medrametla Anjamma Mastan Rao PG College</span>
+          <span class="span1"
+            >Recognized by AICTE, Affiliated to Acharya Nagarjuna
+            University</span
+          >
+          <span class="span2"
+            >Kesanupalli village, Narasaraopet(m), Palnadu (Dt), Andhra
+            Pradesh</span
+          >
+        </div>
+      </div>
+      <div class="navbar"></div>
+      <div class="main-container">
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            Gallery <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#Khalipahadi">Khali Pahadi</a>
+            <a href="#udaipur">Udaipur</a>
+            <a href="#delhi">Delhi</a>
+            <a href="#Jaipur">Jaipur</a>
+          </div>
+        </div>
+        <div class="gall">
+          <div id="gallery-1" class="photo-1">
+            <div class="heading-titles">
+              <p id="para1" class="para" contenteditable="true">
+                Khali Phahadi - 11/11/1111
+              </p>
+              <i id="gallery-1-trash-1" class="fa-solid fa-trash icon" onclick="deleteEvent(this)"></i>
+            </div>
+            <div class="line"></div>
+            <div class="photo-album-1">
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-1"
+                  src="..\photos\image 12.png"
+                />
+                <i id="gallery-1-trash-2" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-2"
+                  src="..\photos\image 14.png"
+                />
+                <i id="gallery-1-trash-3" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-3"
+                  src="..\photos\image 16.png"
+                />
+                <i id="gallery-1-trash-4" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-4"
+                  src="..\photos\image 15.png"
+                />
+                <i id="gallery-1-trash-5" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-5"
+                  src="..\photos\image 19.png"
+                />
+                <i id="gallery-1-trash-6" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-6"
+                  src="..\photos\image 20.png"
+                />
+                <i id="gallery-1-trash-7" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-7"
+                  src="..\photos\image 4.png"
+                />
+                <i id="gallery-1-trash-8" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-8"
+                  src="..\photos\image 10.png"
+                />
+                <i id="gallery-1-trash-9" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+              <div class="single-image">
+                <img
+                  class="qi"
+                  id="gallery-1-img-9"
+                  src="..\photos\image 8.png"
+                />
+                <i id="gallery-1-trash-10" class="fa-solid fa-trash icon" onclick="deleteCard(this)"></i>
+              </div>
+            </div>
+            <input
+              type="file"
+              accept="image/*"
+              id="photoInput-1"
+              class="photoInput"
+              multiple
+            />
+            <button onclick="uploadImage('photoInput-1')">Upload Images</button>
+          </div>
+
+          <div id="gallery-2" class="photo-1">
+            <div class="heading-titles">
+              <p id="para2" class="para" contenteditable="true">
+                Udaipur - 11/11/1111
+              </p>
+              <i id="q1" class="fa-solid fa-trash icon"></i>
+            </div>
+            <div class="line"></div>
+            <div class="photo-album-1">
+              <img src="..\photos\image 12.png" />
+              <img src="..\photos\image 14.png" />
+              <img src="..\photos\image 16.png" />
+              <img src="..\photos\image 15.png" />
+              <img src="..\photos\image 19.png" />
+              <img src="..\photos\image 20.png" />
+              <img src="..\photos\image 4.png" />
+              <img src="..\photos\image 10.png" />
+              <img src="..\photos\image 8.png" />
+            </div>
+            <input
+              type="file"
+              accept="image/*"
+              id="photoInput-2"
+              class="photoInput"
+            />
+          </div>
+
+          <div id="gallery-3" class="photo-1">
+            <div class="heading-titles">
+              <p id="para3" class="para" contenteditable="true">
+                Delhi - 11/11/1111
+              </p>
+              <i id="q1" class="fa-solid fa-trash icon"></i>
+            </div>
+            <div class="line"></div>
+            <div class="photo-album-1">
+              <img src="..\photos\image 12.png" />
+              <img src="..\photos\image 14.png" />
+              <img src="..\photos\image 16.png" />
+              <img src="..\photos\image 15.png" />
+              <img src="..\photos\image 19.png" />
+              <img src="..\photos\image 20.png" />
+              <img src="..\photos\image 4.png" />
+              <img src="..\photos\image 10.png" />
+              <img src="..\photos\image 8.png" />
+            </div>
+            <input
+              type="file"
+              accept="image/*"
+              id="photoInput-3"
+              class="photoInput"
+            />
+          </div>
+
+          <div id="gallery-4" class="photo-1">
+            <div class="heading-titles">
+              <p id="para4" class="para" contenteditable="true">
+                Jaipur - 11/11/1111
+              </p>
+              <i id="q1" class="fa-solid fa-trash icon"></i>
+            </div>
+            <div class="line"></div>
+            <div class="photo-album-1">
+              <img src="..\photos\image 12.png" />
+              <img src="..\photos\image 14.png" />
+              <img src="..\photos\image 16.png" />
+              <img src="..\photos\image 15.png" />
+              <img src="..\photos\image 19.png" />
+              <img src="..\photos\image 20.png" />
+              <img src="..\photos\image 4.png" />
+              <img src="..\photos\image 10.png" />
+              <img src="..\photos\image 8.png" />
+            </div>
+            <input
+              type="file"
+              accept="image/*"
+              id="photoInput-4"
+              class="photoInput"
+            />
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="form">
+          <form id="myForm">
+            <input
+              type="file"
+              accept="image/*"
+              id="photoInput-5"
+              class="photoInputs"
+              multiple
+            />
+            <input
+              type="text"
+              placeholder="Event Name - dd/mm/yyyy"
+              required
+              class="textarea-que"
+              id="name"
+            />
+            <input type="submit" 
+            value="Add Event" class="submittedDetails">
+            </input>
+          </form>
+        </div>
+        <div class="line"></div>
+        <div class="btn-div">
+          <button class="button-56" id="saveButton" role="button">SAVE</button>
+        </div>
+      </div>
+    </div>
+    <script src="Gallery-admin.js"></script>
+  </body>
+</html>
