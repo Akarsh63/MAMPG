@@ -38,7 +38,7 @@
         <div class="box" float="left">
             <h3 class="msg"> Chairman's message</h3>
 
-            <p class="msg" id="aim" contenteditable="true"> Greetings from MAM PG College!!!
+            <p class="msg" id="msg" contenteditable="true"> Greetings from MAM PG College!!!
 
                 “Quality education with moral values is the most powerful weapon to change the world.”
 
@@ -49,14 +49,11 @@
                 I welcome you to take this opportunity to nurture your career & come up with flying colors at St. Pauls.
             </p>
 
-            <form>
-                <textarea id="additionalInfo" placeholder="Add information..." required></textarea>
-                <button type="button" id="addInfoButton">ADD INFO</button>
-            </form>
+
 
             <div id="aim1">
-                <p contenteditable="true" style="text-align: right;">
-                    <strong> M.R.Seshagiri Rao</strong>
+                <p style="text-align: right;">
+                    <strong contenteditable="true" id="chairman-name"> M.R.Seshagiri Rao</strong>
                     <br>
                     <strong>Chairman</strong><br>
                     <strong>MAM PG College</strong><br>
@@ -72,8 +69,12 @@
 
         <div class="chairmanimg">
             <img src="images\giri sir.jpg" alt="Photo" id="photoDisplay" />
-            <input type="file" accept="image/*" id="photoInput" />
+            <input type="file" accept="image/*" id="photoInput" style="display: none;" />
         </div>
+
+        <form action="" method="post" enctype="multipart/form-data" id="main-form" style="display: none;">
+            <input type="submit" id="submitButton">
+        </form>
 
     </div>
 </body>
