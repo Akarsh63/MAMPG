@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const Updatecontainer = [];
     const Updatebox = [];
     const addedPoints = [];
+    const delIds = [];
+    const pointIds = [];
 
     photoInput.addEventListener('change', (event) => {
         const selectedPhoto = event.target.files[0];
@@ -28,45 +30,56 @@ document.addEventListener('DOMContentLoaded', function() {
         photoInput.click();
     });
 
-    const about = document.querySelector('.about');
+    const about = document.querySelector('#about');
     const container = document.querySelector('.container');
     const box = document.querySelector('.box');
 
-    about.addEventListener('blur', function() {
-        const updatedText = this.innerText;
-        Updateabout.push(updatedText);
-    });
+    // about.addEventListener('blur', function() {
+    //     const updatedText = this.innerText;
+    //     Updateabout.push(updatedText);
+    // });
 
-    container.addEventListener('blur', function() {
-        const updatedText = this.innerText;
-        Updatecontainer.push(updatedText);
-    });
+    // container.addEventListener('blur', function() {
+    //     const updatedText = this.innerText;
+    //     Updatecontainer.push(updatedText);
+    // });
 
-    box.addEventListener('blur', function() {
-        const updatedText = this.innerText;
-        Updatebox.push(updatedText);
-    });
+    // box.addEventListener('blur', function() {
+    //     const updatedText = this.innerText;
+    //     Updatebox.push(updatedText);
+    // });
 
     const Aims = document.querySelectorAll('.about p');
     const Aims1 = document.querySelectorAll('.container p');
     const Aims2 = document.querySelectorAll('.box ul');
+    const points = document.querySelectorAll('.point');
     const deleteButtons = document.querySelectorAll('.delete-button');
 
-    Aims.forEach((aim) => {
-        aim.addEventListener('blur', function() {
-            idabout.push(this.id);
-        });
-    });
+    // Aims.forEach((aim) => {
+    //     aim.addEventListener('blur', function() {
+    //         idabout.push(this.id);
+    //     });
+    // });
 
-    Aims1.forEach((aim) => {
-        aim.addEventListener('blur', function() {
-            idcontainer.push(this.id);
-        });
-    });
+    // Aims1.forEach((aim) => {
+    //     aim.addEventListener('blur', function() {
+    //         idcontainer.push(this.id);
+    //     });
+    // });
 
-    Aims2.forEach((aim) => {
-        aim.addEventListener('blur', function() {
-            idbox.push(this.id);
+    // Aims2.forEach((aim) => {
+    //     aim.addEventListener('blur', function() {
+    //         idbox.push(this.id);
+    //     });
+    // });
+
+    points.forEach((point) => {
+        point.addEventListener('click', function() {
+            // delId = this.querySelector('.delete-button').id
+            if(!pointIds.includes(this.id)){
+                pointIds.push(this.id);
+                console.log(pointIds);
+            }
         });
     });
 
@@ -74,7 +87,16 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', function() {
             // Find the parent <li> and remove it when the delete button is clicked
             const listItem = this.parentNode;
-            listItem.parentNode.removeChild(listItem);
+            delIds.push(this.id);
+            console.log(this.parentElement.id);
+            if(pointIds.includes(this.parentElement.id)){
+                console.log(this.parentElement.id);
+                console.log(pointIds.indexOf(this.parentElement.id));
+                console.log(pointIds);
+                pointIds.splice(0, 1);
+                console.log(pointIds);
+            }
+            this.parentElement.style.display = "none";
         });
     });
 
@@ -87,9 +109,9 @@ document.addEventListener('DOMContentLoaded', function() {
             if (pointText.trim() !== '') {
                 // Create a new list item
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `${pointText} <button class="delete-button"><i class="fas fa-trash"></i></button>`;
+                listItem.innerHTML = `${pointText} <button class="delete-button"><i class="fas fa-trash"></i></button>`; 
                 addedPoints.push(listItem);
-
+                
                 // Add the new list item to the list
                 pointList.appendChild(listItem);
 
@@ -108,36 +130,78 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     saveButton.addEventListener('click', function() {
-        for (let i = 0; i < idabout.length; i++) {
-            const editableText = document.getElementById(idabout[i]);
-            const updatedText = Updateabout[i];
-            editableText.innerText = updatedText;
-        }
+        // for (let i = 0; i < idabout.length; i++) {
+        //     const editableText = document.getElementById(idabout[i]);
+        //     const updatedText = Updateabout[i];
+        //     editableText.innerText = updatedText;
+        // }
 
-        for (let i = 0; i < idcontainer.length; i++) {
-            const editableText = document.getElementById(idcontainer[i]);
-            const updatedText = Updatecontainer[i];
-            editableText.innerText = updatedText;
-        }
+        // for (let i = 0; i < idcontainer.length; i++) {
+        //     const editableText = document.getElementById(idcontainer[i]);
+        //     const updatedText = Updatecontainer[i];
+        //     editableText.innerText = updatedText;
+        // }
 
-        for (let i = 0; i < idbox.length; i++) {
-            const editableText = document.getElementById(idbox[i]);
-            const updatedText = Updatebox[i];
-            editableText.innerText = updatedText;
-        }
+        // for (let i = 0; i < idbox.length; i++) {
+        //     const editableText = document.getElementById(idbox[i]);
+        //     const updatedText = Updatebox[i];
+        //     editableText.innerText = updatedText;
+        // }
+        console.log(delIds);
+        console.log(pointIds);
+        const newPoints = [];
+        const modifiedPoints = [];
+        addedPoints.forEach((point) =>{
+            newPoints.push([point.innerText, point.parentElement.id]);
+        });
+        pointIds.forEach((point)=>{
+            modifiedPoints.push(document.getElementById(point).innerText);
+        })
+        console.log(newPoints);
+        console.log(modifiedPoints);
+        
+
+        const about = document.getElementById('aboutP').innerText;
+        const why = document.getElementById('whyP').innerText;
+        const vision = document.getElementById('visionP').innerText;
+        const quality = document.getElementById('qualityP').innerText;
+        
+        json_details = {'about':about, 'why': why, 'vision':vision, 'quality':quality, 'newPoints': newPoints, 'delIds': delIds, 'modifiedIds':pointIds, 'modifiedPoints': modifiedPoints};
+
+        console.log(json_details);
+        json_details = JSON.stringify(json_details);
+
+        var photoFile = document.createElement("input");
+        photoFile.setAttribute("name", 'photoFile');
+        photoFile.setAttribute("type", "file");
+        photoFile.files = photoInput.files;
+        photoFile.hidden =true;
+
+        var json_body = document.createElement("input");
+        json_body.setAttribute("name", 'json_details');
+        json_body.setAttribute("type", "json");
+        json_body.setAttribute("value", json_details);
+
+        // photoFile.files = photoInput.files;
+        json_body.hidden = true;
+        
+        document.getElementById('main-form').appendChild(photoFile);
+        document.getElementById('main-form').appendChild(json_body);
+        // document.getElementById('submitButton').click();
+         
 
         // Append added points to the respective boxes
-        const box1 = document.querySelector('.box1 ul');
-        addedPoints.forEach(point => {
-            box1.appendChild(point);
-        });
+        // const box1 = document.querySelector('.box1 ul');
+        // addedPoints.forEach(point => {
+        //     box1.appendChild(point);
+        // });
 
-        console.log(idabout);
-        console.log(idcontainer);
-        console.log(idbox);
-        console.log(Updateabout);
-        console.log(Updatecontainer);
-        console.log(Updatebox);
-        console.log(addedPoints);
+        // console.log(idabout);
+        // console.log(idcontainer);
+        // console.log(idbox);
+        // console.log(Updateabout);
+        // console.log(Updatecontainer);
+        // console.log(Updatebox);
+        // console.log(addedPoints);
     });
 });

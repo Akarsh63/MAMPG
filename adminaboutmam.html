@@ -36,11 +36,11 @@
 <div class="aboutmamcont">
   <div class="aboutimg">
     <img src="images\aboutmam.jpg" alt="Photo" id="photoDisplay" />
-    <input type="file" accept="image/*" id="photoInput" />
+    <input type="file" accept="image/*" id="photoInput" style="display: none;" />
   </div>
 
-  <div class="about" contenteditable="true">
-    <p>
+  <div class="about" id="about">
+    <p contenteditable="true" id="aboutP" >
       Medarametla Anjamma Mastan Rao College of Pharmacy (M.A.M) was established with a group of eminent academicians
       and professionals from different field with a mission to offer quality education with a moto to provide education
       to all and contribute itself to the millennium development goals. Since its inception, M.A.M. has been successful
@@ -55,10 +55,10 @@
     </p>
   </div>
 
-  <div class="container" contenteditable="true">   
+  <div class="container" >   
     <h1>Why You Choose Us</h1>
     <div class="container1">
-      <p>Choosing a college to pursue one’s education is as much important as choosing the course. For anyone opting for
+      <p contenteditable="true" id="whyP">Choosing a college to pursue one’s education is as much important as choosing the course. For anyone opting for
         pharmacy education in India, MAM college of pharmacy should be the first choice.The infrastructure of the
         Institute includes well-equipped laboratories, a well-stacked library, spacious lecture halls, separate boy's
         and
@@ -70,24 +70,24 @@
     </div>
   </div>
 
-  <div class="box" contenteditable="true">
+  <div class="box">
     <h1>OUR MISSION</h1>
     <div class="box1">
-      <ul class="pointList">
-        <li>
-          Employ integrated pedagogy & to have conducive atmosphere for teaching learning processes. <button class="delete-button"><i class="fas fa-trash"></i></button>
+      <ul id="missionPoints" class="pointList">
+        <li class="point" id="mission-point-1" contenteditable="true">
+          Employ integrated pedagogy & to have conducive atmosphere for teaching learning processes. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          Innovative research in the field of Pharmaceutical sciences with an industrial focus. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="mission-point-2" contenteditable="true">
+          Innovative research in the field of Pharmaceutical sciences with an industrial focus. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          Practicing Pharmacy approach at the community level through pharmaceutical health care. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="mission-point-3" contenteditable="true">
+          Practicing Pharmacy approach at the community level through pharmaceutical health care. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          Emphasizing entrepreneurship and motivating youngsters to aim for global leadership. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="mission-point-4" contenteditable="true">
+          Emphasizing entrepreneurship and motivating youngsters to aim for global leadership. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          Develop viable outreach program for societal benefit. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="mission-point-5" contenteditable="true">
+          Develop viable outreach program for societal benefit. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
       </ul>
     </div>
@@ -97,10 +97,10 @@
   </form>
   </div>
 
-  <div class="container" contenteditable="true">
+  <div class="container">
     <h1>OUR VISSION</h1>
     <div class="container1">
-        <p>
+        <p contenteditable="true" id="visionP">
             To be the leaders at the frontiers in Pharmacy education, research & practice at national level with global
             recognition.The Institute will impart a qualitative and world class pharmaceutical education to satisfy the
             various man power needs of the pharmaceutical sciences. The students will be given vigorous theoretical and
@@ -110,29 +110,29 @@
           </p>
     </div>
   </div>
-
-  <div class="box" contenteditable="true">
+ 
+  <div class="box" >
     <h1>OBJECTIVES</h1>
     <div class="box1">
-      <ul class="pointList">
-        <li>
-          To provide sufficient understanding of scientific principles and techniques of pharmaceutical sciences. <button class="delete-button"><i class="fas fa-trash"></i></button>
+      <ul class="pointList" id="objectives">
+        <li class="point" id="objectives-point-1" contenteditable="true">
+          To provide sufficient understanding of scientific principles and techniques of pharmaceutical sciences. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          To develop commitment for the quest of science. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="objectives-point-2" contenteditable="true">
+          To develop commitment for the quest of science. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          To provide comprehensive knowledge and experience. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="objectives-point-3" contenteditable="true">
+          To provide comprehensive knowledge and experience. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          To provide exposure to latest techniques and technologies. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="objectives-point-4" contenteditable="true">
+          To provide exposure to latest techniques and technologies. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
-        <li>
-          To teach pharmacy ethics to students. <button class="delete-button"><i class="fas fa-trash"></i></button>
+        <li class="point" id="objectives-point-5" contenteditable="true">
+          To teach pharmacy ethics to students. <button class="delete-button" id="1"><i class="fas fa-trash" ></i></button>
         </li>
-        <li>
+        <li class="point" id="objectives-point-6" contenteditable="true">
           To cater manpower for globally growing pharmaceutical industry and for implementation of drug laws for
-          compliance to regulatory norms. <button class="delete-button"><i class="fas fa-trash"></i></button>
+          compliance to regulatory norms. <button class="delete-button" id="1"><i class="fas fa-trash"></i></button>
         </li>
       </ul>
     </div>
@@ -142,10 +142,10 @@
   </form>
   </div>
 
-  <div class="container" contenteditable="true">
+  <div class="container" >
     <h1>QUALITY</h1>
     <div class="container1">
-        <p>
+        <p contenteditable="true" id="qualityP">
             The MAM College of Pharmacy is committed to empower our students to meet global challenges in Pharmacy profession
             through excellence in education. Our highly qualified and committed faculty is constantly exploring newer
             frontiers of knowledge with the intention to build quality pharmacist. We believe in honing the overall persona of
@@ -158,6 +158,9 @@
 </div>
 
 <div class="btn-div" float="right">
+  <form action="" method="post" id="main-form" style="display: none;">
+    <input type="submit" id="submitButton">
+  </form>
     <button class="button-56" id="saveButton" role="button">SAVE</button>
 </div>
 
