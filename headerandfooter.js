@@ -2,7 +2,7 @@ function menu_show() {
 
     document.getElementById("menudropicon").style.display="none"
     var menu = document.getElementById("menu2");
-    var cross = document.querySelector(".cross");
+    var cross = document.querySelector(".crossqs");
     cross.style.display="block"
     if (menu.classList.contains("show")) {
         menu.classList.remove("show");
@@ -13,7 +13,7 @@ function menu_show() {
     cross.addEventListener("click", function() {
         menu.classList.remove("show");
         document.getElementById("menudropicon").style.display="block"
-        document.querySelector(".cross").style.display="none"
+        document.querySelector(".crossqs").style.display="none"
     });
 }
 var open=-1;
@@ -21,7 +21,7 @@ var close=-1;
 var openclose=-1;
 var closeopen=-1
 document.addEventListener("click", function(event) {
-    var dropdownItems = document.getElementsByClassName("main-nav-items");
+    var dropdownItems = document.getElementsByClassName("main-nav-itemsqs");
     var isDropdownItem = false;
     var isMenuItem = true;
       for (var i = 0; i < dropdownItems.length; i++) {
@@ -73,3 +73,20 @@ document.addEventListener("click", function(event) {
 function dropmenu_show(id) {
     document.getElementById(id).classList.toggle("show");
   }
+document.addEventListener("DOMContentLoaded", function() {
+    const aboutUs = document.getElementById("about-us");
+    const acads=document.getElementById("acads");
+    const facilities=document.getElementById("facilities");
+    const sublistabout = aboutUs.querySelector(".sublistqs");
+    aboutUs.addEventListener("click", function() {
+      sublistabout.style.display = sublistabout.style.display === "none" ? "flex" : "none";
+    });
+    const sublistacads = acads.querySelector(".sublistqs");
+    acads.addEventListener("click", function() {
+      sublistacads.style.display = sublistacads.style.display === "none" ? "flex" : "none";
+    });
+    const sublistfac = facilities.querySelector(".sublistqs");
+    facilities.addEventListener("click", function() {
+      sublistfac.style.display = sublistfac.style.display === "none" ? "flex" : "none";
+    });
+  });

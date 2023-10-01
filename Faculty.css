@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&family=EB+Garamond&family=Golos+Text:wght@500&family=IBM+Plex+Sans:wght@300;400&family=Inter:wght@400&family=Jockey+One&family=Lato:ital@0;1&family=Lobster&family=Martian+Mono:wght@300&family=Montserrat&family=Playfair:ital@1&family=Poppins&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,300;1,300&family=Source+Serif+4&family=Space+Grotesk&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F4F4;
+}
+.container {
+    width: 100vw;
+    height: 100%;
+}
+.clgname {
+    position: relative;
+    width: 100vw;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    background-color: #8D4B6E;
+    color: #FFFFFF;
+    flex-direction: row;
+}
+.header-right {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 20px auto ;
+}
+.clgname .p{
+    margin: 3px auto 3px auto;
+    font-size: 40px;
+    text-align: center;
+}
+.clgname .span1 {
+    margin: 3px auto 3px auto;
+    font-size: 22px;
+    text-align: center;
+}
+.clgname .span2 {
+    margin: 3px auto 3px auto;
+    font-size: 18px;
+    text-align: center;
+}
+.clgname img {
+    margin-left: 80px;
+}
+.navbar {
+    width: 100%;
+    background-color: #33455F;
+    height: 80px;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #F8F4F4;
+    height: 100%;
+}
+.heading {
+    color: #33455F;
+    padding: 15px 30px;
+    font-size: 30px;
+    margin-top: 20px;
+    font-family: 'Source Serif 4', serif;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+.left {
+    width: 25%;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.tf-a {
+    text-decoration: none;
+    color: #000000;
+    margin: 25px;
+    font-weight: 600;
+}
+.tf-c {
+    text-decoration: none;
+    color: #000000;
+    margin: 15px 0 15px 50px;
+    font-weight: 600;
+}
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    border-top: 1.5px solid black;
+    margin: 5px 0;
+    width: 100%;
+}
+.header {
+    font-size: 20px;
+}
+.card {
+    width: 100% !important;
+    margin: 10px 0 30px 0;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    border: 1.5px solid black;
+}
+.img-prof {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.delete-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right !important;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.card img {
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    font-weight: 500;
+    margin: 2px 0 4px 10px;
+}
+.dept {
+    display: flex;
+    flex-direction: row;
+    margin: 2px 0 4px 0;
+}
+.department {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.department label {
+    font-size: 15px;
+}
+.department p {
+    font-size: 15px;
+    margin-left: 3px;
+}
+.finalsubmit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.submitediteddetails{
+    padding: 10px 15px;
+    background-color: #8D4B6E;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.submitediteddetails:hover{
+    opacity: .9;
+}
+@media screen and (max-width: 992px) {
+    .right {
+        width: 60%;
+    }
+    .header {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .card {
+        flex-direction: row;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+    .name {
+        font-weight: 500;
+        margin: 2px 0 4px 10px;
+    }
+    .dept {
+        flex-direction: column;
+        margin: 3px 0 3px 0;
+    }
+    .department label {
+        font-size: 14px;
+    }
+    .department p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .clgname {
+        position: relative;
+        width: 100vw;
+        display: flex;
+        background-color: #8D4B6E;
+        color: #FFFFFF;
+        flex-direction: column;
+    }
+    .clgname .p{
+        font-size: 30px;
+        width: 100%;
+        margin: 0px auto 10px auto;
+        display: flex;
+        text-align: center;
+    }
+    .clgname .span1 {
+        font-size: 13px;
+        text-align: center;
+    }
+    .clgname .span2 {
+        margin: 3px;
+        font-size: 13px;
+    }
+    .clgname img {
+        margin-top: 25px;
+        width: 120px;
+        height: 120px;
+        margin-left: 10px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .left {
+        width: 80%;
+        border: 1px solid black;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        margin: 0 auto 15px auto;
+    }
+    .left p {
+        font-size: 12px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .left a {
+        text-decoration: none;
+        color: #000000;
+        margin: 20px;
+        font-weight: 600;
+    }
+    .right {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .header {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid black;
+    }
+    .delete-icon{
+        margin-left: 0;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+    }
+    .dept {
+        display: flex;
+        flex-direction: column;
+        margin: 2px 0 4px 0;
+    }
+    .name {
+        font-weight: 500;
+        margin: 2px 0 4px 10px;
+        font-size: 18px;
+    }
+    .department {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    }
+    .department label {
+        font-size: 12px;
+    }
+    .department p {
+        font-size: 12px;
+        margin-left: 3px;
+    }
+    .img-prof {
+        width: 100%;
+    }
+}

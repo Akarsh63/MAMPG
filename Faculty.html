@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty</title>
+    <link rel="stylesheet" href="Faculty.css" >
+    <script src="https://kit.fontawesome.com/17305c1313.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="clgname">
+            <img src="photos\image 1.png" alt="Logo" />
+            <div class="header-right">
+                <span class="p">Medrametla  Anjamma Mastan Rao PG College</span>
+                <span class="span1">Recognized by AICTE, Affiliated to Acharya Nagarjuna University</span>
+                <span class="span2" >Kesanupalli village, Narasaraopet(m), Palnadu (Dt), Andhra Pradesh</span>
+            </div>
+        </div>
+        <div class="navbar">
+
+        </div>
+        <div class="main-container">
+            <div class="heading">
+                <p>Faculty</p>
+            </div>
+            <div class="row">
+              <div class="left">
+                    <a class="tf-a" href="#">Teaching Faculty</a>
+                    <a class="tf-c" href="#mba">MBA</a>
+                    <a class="tf-c" href="#">MCA</a>
+                    <a class="tf-a" href="#" >Non Teaching Faculty</a>
+              </div>
+              <div class="right">
+                <div class="line"></div>
+                <!-- teaching faulty starts -->
+                <div id="teachingfaculty" class="header">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <p class="header">Teaching Faculty</p>
+                    </div>
+                    <div class="line"></div>
+                    
+                    <div id="mba" class="header">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <p class="header">MBA</p>
+                            <!-- +,-  button for mba -->
+                            <div style="display: flex; flex-direction: row; gap: 10px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" class="add-faculty-btn form1 im1 pre1 bi bi-plus-circle">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" class="remove-faculty-btn form1 bi bi-dash-circle" >
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                              </svg>
+                            </div>
+                            <!-- +,- button for mba -->
+                        </div>
+                        <div class="line"></div>
+                          <!-- add faculty form-->
+                            <form class="form1" style="display: none;width: 100%;margin-bottom: 10px;">
+                              <div style="width: 100%;margin-bottom: 10px;">
+                                <div class="card" style="margin-bottom: 10px;">
+                                        <div>
+                                        <input type="file" class="im1" accept="image/*">
+                                        <img src="#" class="pre1" alt="Profile" style="display: none; max-width: 100px; max-height: 100px;">
+                                        </div>
+                                    <div class="details">
+                                        <p class="name">Faculty Name:<input type="text" id="name-input" placeholder="Name"></p>
+                                        
+                                        <div class="dept">
+                                            <div class="department">
+                                            <label>Designation:</label>
+                                            <input type="text" id="designation-input" placeholder="Designation">
+                                            </div>
+                                            <div class="department">
+                                            <label>Department:</label>
+                                            <input type="text" id="department-input" placeholder="Department">
+                                            </div>
+                                        </div>
+                                        <div class="department">
+                                            <label>Highest Qualification:</label>
+                                            <input type="text" id="qualification-input" placeholder="Highest Qualification">
+                                        </div>
+                                        <div class="dept">
+                                            <div class="department">
+                                            <label>Email:</label>
+                                            <input type="text" id="email-input" placeholder="Email">
+                                            </div>
+                                            <div class="department">
+                                            <label>Mobile:</label>
+                                            <input type="text" id="mobile-input" placeholder="Mobile">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div style="width: 100%;text-align: center;"><button type="submit" class="submitediteddetails">Add Faculty</button></div>
+                            </form>
+                        <!-- add faculty form -->
+                            
+                        <!-- cards -->
+                        <div class=" card cardd" id="card1">
+                            <div class="image-container">
+                                <img src="photos\image1.jpg" alt="Profile" class="facultyprofileimage img-prof"/>
+                                <input type="file" class="image-input" style="display: none;" accept="image/*">
+                            </div>
+                            <div class="details">
+                                <div>
+                                    <label style="display: none;">Name :</label>
+                                    <p class="name" contenteditable="true">Prof. SRUNGARAPATI PRASADA RAO</p>
+                                </div>
+                                
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p contenteditable="true">Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p contenteditable="true">Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p contenteditable="true">MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p contenteditable="true">udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p contenteditable="true">9999999999</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="delete-icon">
+                               <i class="fa-solid fa-trash" onclick="deleteCard(this)" style="color: #ca0220;"></i>
+                            </div>
+                            
+                        </div> 
+
+                        <div class=" card cardd" id="card2">
+                            <div class="image-container">
+                                <img src="photos\image2.jpg" alt="Profile" class="facultyprofileimage img-prof"/>
+                                <input type="file" class="image-input" style="display: none;" accept="image/*">
+                            </div>
+                            <div class="details">
+                                <div>
+                                    <label style="display: none;">Name :</label>
+                                    <p class="name" contenteditable="true">Prof. ss</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p contenteditable="true">Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p contenteditable="true">Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p contenteditable="true">MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p contenteditable="true">udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p contenteditable="true">9999999999</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="delete-icon">
+                                <i class="fa-solid fa-trash" onclick="deleteCard(this)" style="color: #ca0220;"></i>
+                             </div>
+                        </div>
+                        
+
+                        <div class="card">
+                            <img src="photos\image3.jpg" alt="Profile" />
+                            <div class="details">
+                                <p class="name">Prof. SRUNGARAPATI PRASADA RAO</p>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p>Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p>Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p>MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p>udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p>9999999999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="card">
+                            <img src="photos\image4.jpg" alt="Profile" />
+                            <div class="details">
+                                <p class="name">Prof. SRUNGARAPATI PRASADA RAO</p>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p>Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p>Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p>MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p>udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p>9999999999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- cards of mba ends-->
+
+                    </div>
+                    <!-- mba ends-->
+
+                    <!-- mca starts-->
+                    <div id="mca" class="header">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <p class="header">MCA</p>
+                            <!-- +,-  button for mca starts-->
+                            <div style="display: flex; flex-direction: row; gap: 10px;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" class="add-faculty-btn form2 im2 pre2 bi bi-plus-circle">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" class="remove-faculty-btn form2 bi bi-dash-circle" >
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                              </svg>
+                            </div>
+                            <!-- +,- button for mca ends-->
+                        </div>
+                        <div class="line"></div>
+                          <!-- add faculty form starts-->
+                            <form class="form2" style="display: none;width: 100%;margin-bottom: 10px;">
+                              <div style="width: 100%;margin-bottom: 10px;">
+                                <div class="card" style="margin-bottom: 10px;">
+                                        <div>
+                                        <input type="file" class="im2" accept="image/*">
+                                        <img src="#" class="pre2" alt="Profile" style="display: none; max-width: 100px; max-height: 100px;">
+                                        </div>
+                                    <div class="details">
+                                        <p class="name">Faculty Name:<input type="text" id="name-input" placeholder="Name"></p>
+                                        
+                                        <div class="dept">
+                                            <div class="department">
+                                            <label>Designation:</label>
+                                            <input type="text" id="designation-input" placeholder="Designation">
+                                            </div>
+                                            <div class="department">
+                                            <label>Department:</label>
+                                            <input type="text" id="department-input" placeholder="Department">
+                                            </div>
+                                        </div>
+                                        <div class="department">
+                                            <label>Highest Qualification:</label>
+                                            <input type="text" id="qualification-input" placeholder="Highest Qualification">
+                                        </div>
+                                        <div class="dept">
+                                            <div class="department">
+                                            <label>Email:</label>
+                                            <input type="text" id="email-input" placeholder="Email">
+                                            </div>
+                                            <div class="department">
+                                            <label>Mobile:</label>
+                                            <input type="text" id="mobile-input" placeholder="Mobile">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div style="width: 100%;text-align: center;"><button type="submit" class="submitediteddetails">Add Faculty</button></div>
+                            </form>
+                        <!-- add faculty form ends-->
+
+                        <!-- cards of mca starts-->
+
+                        <!-- cards of mca ends-->
+                    </div>
+                    <!-- mca ends-->
+                </div>
+                <!-- teachingfaculty ends-->
+
+                <!-- nonteachingfaculty starts -->
+                <div id="nonteachingfaculty" class="header">
+                    <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <p>Non Teaching Faculty</p>
+                        <!-- +,-  button for mca starts-->
+                        <div style="display: flex; flex-direction: row; gap: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" class="add-faculty-btn form3 im3 pre3 bi bi-plus-circle">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" class="remove-faculty-btn form3 bi bi-dash-circle" >
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                            </svg>
+                        </div>
+                          <!-- +,- button for mca ends-->
+                    </div>
+                    <div class="line"></div>
+
+                         <!-- add faculty form starts-->
+                         <form class="form3" style="display: none;width: 100%;margin-bottom: 10px;">
+                            <div style="width: 100%;margin-bottom: 10px;">
+                              <div class="card" style="margin-bottom: 10px;">
+                                      <div>
+                                      <input type="file" class="im3" accept="image/*">
+                                      <img src="#" class="pre3" alt="Profile" style="display: none; max-width: 100px; max-height: 100px;">
+                                      </div>
+                                  <div class="details">
+                                      <p class="name">Faculty Name:<input type="text" id="name-input" placeholder="Name"></p>
+                                      
+                                      <div class="dept">
+                                          <div class="department">
+                                          <label>Designation:</label>
+                                          <input type="text" id="designation-input" placeholder="Designation">
+                                          </div>
+                                          <div class="department">
+                                          <label>Department:</label>
+                                          <input type="text" id="department-input" placeholder="Department">
+                                          </div>
+                                      </div>
+                                      <div class="department">
+                                          <label>Highest Qualification:</label>
+                                          <input type="text" id="qualification-input" placeholder="Highest Qualification">
+                                      </div>
+                                      <div class="dept">
+                                          <div class="department">
+                                          <label>Email:</label>
+                                          <input type="text" id="email-input" placeholder="Email">
+                                          </div>
+                                          <div class="department">
+                                          <label>Mobile:</label>
+                                          <input type="text" id="mobile-input" placeholder="Mobile">
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div style="width: 100%;text-align: center;"><button type="submit" class="submitediteddetails">Add Faculty</button></div>
+                          </form>
+                      <!-- add faculty form ends-->
+
+                      <!-- cards of non teaching starts -->
+                        <div class="card">
+                            <img src="photos\image1.jpg" alt="Profile" />
+                            <div class="details">
+                                <p class="name">Prof. SRUNGARAPATI PRASADA RAO</p>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p>Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p>Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p>MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p>udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p>9999999999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="photos\image2.jpg" alt="Profile" />
+                            <div class="details">
+                                <p class="name">Prof. SRUNGARAPATI PRASADA RAO</p>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p>Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p>Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p>MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p>udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p>9999999999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="photos\image3.jpg" alt="Profile" />
+                            <div class="details">
+                                <p class="name">Prof. SRUNGARAPATI PRASADA RAO</p>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Designation :</label>
+                                        <p>Professor</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Department :</label>
+                                        <p>Business and management</p>
+                                    </div>
+                                </div>
+                                <div class="department">
+                                    <label>Highest Qualification : </label>
+                                    <p>MBA , PhD</p>
+                                </div>
+                                <div class="dept">
+                                    <div class="department">
+                                        <label>Email : </label>
+                                        <p>udanti.mampg.in.ac</p>
+                                    </div>
+                                    <div class="department">
+                                        <label>Mobile : </label>
+                                        <p>9999999999</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- cards of non teaching ends -->
+                </div> 
+                <!-- nonteachingfaculty ends -->
+                 <div class="finalsubmit">
+                    <button id="submitediteddetails" class="submitediteddetails" onclick="submitChanges()">Submit</button>
+                 </div>        
+               </div>
+               <!-- right component ends -->
+            </div>
+        </div>
+    </div>
+    <script src="Faculty.js"></script>
+</body>
+</html>
