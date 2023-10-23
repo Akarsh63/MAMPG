@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="Library-admin.css" />
+    <script src="Library-admin.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/17305c1313.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clgname">
+        <img src="photos\image 1.png" alt="Logo" />
+        <div class="header-right">
+          <span class="p">Medrametla Anjamma Mastan Rao PG College</span>
+          <span class="span1"
+            >Recognized by AICTE, Affiliated to Acharya Nagarjuna
+            University</span
+          >
+          <span class="span2"
+            >Kesanupalli village, Narasaraopet(m), Palnadu (Dt), Andhra
+            Pradesh</span
+          >
+        </div>
+      </div>
+      <div class="navbar"></div>
+      <div class="main-container">
+        <div class="heading">
+          <p>Library</p>
+        </div>
+        <div class="row">
+          <div class="matter">
+            <div class="info">
+              <div class="aim-col" id="aim-col">
+                <span class="big" id="aim">Aim</span>
+                <div id="aim1" class="row-point">
+                  <i class="fa-solid fa-hand-point-right i"></i>
+                  <p contenteditable="true" id="aim1">The right environment</p>
+                  <i
+                    id="aim1"
+                    onclick="DeleteBtn(this)"
+                    class="fa-solid fa-trash"
+                  ></i>
+                </div>
+                <div class="row-point" id="aim2">
+                  <i class="fa-solid fa-hand-point-right i"></i>
+                  <p contenteditable="true" id="aim2">Appropiate facilities</p>
+                  <i
+                    id="aim2"
+                    onclick="DeleteBtn(this)"
+                    class="fa-solid fa-trash del"
+                  ></i>
+                </div>
+                <div class="row-point" id="aim3">
+                  <i class="fa-solid fa-hand-point-right i"></i>
+                  <p contenteditable="true" id="aim3">
+                    Support high quality teaching and learning
+                  </p>
+                  <i
+                    id="aim3"
+                    onclick="DeleteBtn(this)"
+                    class="fa-solid fa-trash del"
+                  ></i>
+                </div>
+                <form>
+                  <textarea
+                    placeholder="Enter your point..."
+                    required
+                  ></textarea>
+                  <button type="submit">ADD</button>
+                </form>
+              </div>
+              <br />
+              <div class="provides-col" id="provides-col">
+                <span class="big" id="provides">Provides</span>
+                <div class="row-point" id="provides1">
+                  <i class="fa-solid fa-hand-point-right i"></i>
+                  <p class="prov" contenteditable="true" id="provides1">
+                    Useful collection of learning material
+                  </p>
+                  <i
+                    onclick="DeleteBtn(this)"
+                    id="provides1"
+                    class="fa-solid fa-trash del"
+                  ></i>
+                </div>
+                <div class="row-point" id="provides2">
+                  <i class="fa-solid fa-hand-point-right i"></i>
+                  <p class="prov" contenteditable="true" id="provides2">
+                    Access to computerized information and sources
+                  </p>
+                  <i
+                    onclick="DeleteBtn(this)"
+                    id="provides2"
+                    class="fa-solid fa-trash del"
+                  ></i>
+                </div>
+                <div class="row-point" id="provides3">
+                  <i class="fa-solid fa-hand-point-right i"></i>
+                  <p class="prov" contenteditable="true" id="provides3">
+                    Audio/Vedio learning facility
+                  </p>
+                  <i
+                    onclick="DeleteBtn(this)"
+                    id="provides3"
+                    class="fa-solid fa-trash del"
+                  ></i>
+                </div>
+                <form>
+                  <textarea
+                    placeholder="Enter your point..."
+                    required
+                  ></textarea>
+                  <button type="submit">ADD</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="photo">
+            <img src="../photos/image 2.png" alt="Photo" id="photoDisplay" />
+            <input
+              style="visibility: hidden"
+              type="file"
+              accept="image/*"
+              id="photoInput"
+            />
+          </div>
+        </div>
+        <div class="information">
+          <p id="Info" contenteditable="true">
+            The library is operating in a fully automated environment. The
+            library is using automation software. Library timings are 9.00 a.m
+            to 6.00 p.m. Services provided are Document delivery service,
+            Reference Service & Assistance Photocopy Service, Multimedia
+            Resource On-line Databases, Current contents, User Education .
+          </p>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button class="button-56" id="saveButton" role="button">SAVE</button>
+      </div>
+    </div>
+  </body>
+</html>

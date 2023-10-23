@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Announcements</title>
+    <link rel="stylesheet" href="Announcements-admin.css" />
+    <script src="Announcements-admin.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/17305c1313.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clgname">
+        <img src="../photos/image 1.png" alt="Logo" />
+        <div class="header-right">
+          <span class="p">Medrametla Anjamma Mastan Rao PG College</span>
+          <span class="span1"
+            >Recognized by AICTE, Affiliated to Acharya Nagarjuna
+            University</span
+          >
+          <span class="span2"
+            >Kesanupalli village, Narasaraopet(m), Palnadu (Dt), Andhra
+            Pradesh</span
+          >
+        </div>
+      </div>
+      <div class="navbar"></div>
+      <div class="main-container">
+        <div class="heading">
+          <p>Announcements</p>
+        </div>
+        <div class="announcements">
+          <div class="announce" id="announce-1">
+            <img class="hang1" src="../photos/Ellipse 1.png" />
+            <img class="hang2" src="../photos/Ellipse 1.png" />
+            <div class="info">
+              <p class="date">24/07/2023</p>
+              <a href="www.vinay.com"
+                ><p contenteditable="true" id="announce-text-1" class="span">
+                  MBA Admissions Started - Application form has been released
+                  Students can admit through various portal
+                </p></a
+              >
+              <label class="span" for="url">Link: </label>
+              <input
+                class="span-link"
+                id="url-input"
+                type="url"
+                name="url"
+                placeholder="https://example.com"
+                pattern="https://.*"
+                required
+              />
+            </div>
+            <div class="edit-del">
+              <button class="button" onclick="DeleteBtn(this)" id="announce-1">
+                <p><i class="fa-solid fa-trash"></i></p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <form method="post">
+          <label for="add-announcement">Add a new announcement : </label>
+          <textarea
+            type="textarea"
+            placeholder="Enter your announcement..."
+            name="for"
+            required
+            rows="5"
+            columns="50"
+          ></textarea>
+          <label for="add-url">Add a Link for Announcement : </label>
+          <input
+            type="url"
+            name="url"
+            placeholder="https://example.com"
+            pattern="https://.*"
+            required
+          />
+          <button type="submit">ADD</button>
+        </form>
+      </div>
+      <div class="btn-div">
+        <button class="button-56" id="saveButton" role="button">SAVE</button>
+      </div>
+    </div>
+  </body>
+</html>

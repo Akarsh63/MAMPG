@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:ital@1&family=EB+Garamond&family=Golos+Text:wght@500&family=IBM+Plex+Sans:wght@300;400&family=Inter:wght@400&family=Jockey+One&family=Lato:ital@0;1&family=Lobster&family=Martian+Mono:wght@300&family=Montserrat&family=Playfair:ital@1&family=Poppins&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,300;1,300&family=Source+Serif+4&family=Space+Grotesk&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f4f4;
+}
+.container {
+  /* width: 100vw; */
+  height: 100%;
+}
+.clgname {
+  position: relative;
+  /* width: 100vw; */
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  background-color: #8d4b6e;
+  color: #ffffff;
+  flex-direction: row;
+}
+.header-right {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 20px auto;
+}
+.clgname .p {
+  margin: 3px auto 3px auto;
+  font-size: 40px;
+  text-align: center;
+}
+.clgname .span1 {
+  margin: 3px auto 3px auto;
+  font-size: 22px;
+  text-align: center;
+}
+.clgname .span2 {
+  margin: 3px auto 3px auto;
+  font-size: 18px;
+  text-align: center;
+}
+.clgname img {
+  margin-left: 80px;
+}
+.navbar {
+  width: 100%;
+  background-color: #33455f;
+  height: 80px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100vw; */
+  background-color: #f8f4f4;
+  height: 100%;
+}
+.heading {
+  color: #33455f;
+  padding: 15px 30px;
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Source Serif 4", serif;
+}
+.row {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.matter {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #ffffff;
+  /* height: 340px; */
+}
+.info {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.big {
+  font-size: 20px;
+  color: #33455f;
+  font-weight: 600;
+  margin: 3px 0 5px 0;
+  font-family: "Inter", sans-serif;
+}
+.info p {
+  margin: 3px 0px 0 5px;
+  color: #33455f;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  position: relative;
+  width: 90%;
+}
+.provides-col {
+  display: flex;
+  flex-direction: column;
+}
+.prov {
+  margin: 3px 0px 0 5px;
+  color: #33455f;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  position: relative;
+  width: 90%;
+}
+.info .i {
+  font-size: 18px;
+  color: #111;
+  margin-right: 5px;
+}
+.info .del {
+  font-size: 15px;
+  right: -18px;
+  color: #111;
+  cursor: pointer;
+}
+.row-point {
+  display: grid;
+  grid-template-columns: 0.2fr 7fr 0.7fr;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+}
+form textarea {
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  resize: none;
+  margin: 5px;
+}
+form button {
+  padding: 8px 18px;
+}
+.photo {
+  width: 50%;
+  height: 340px;
+}
+.photo img {
+  width: 100%;
+  height: 330px;
+}
+.information {
+  width: 80%;
+  margin: 50px auto;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: #33455f;
+}
+.btn-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: #fee6e3;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+@media screen and (max-width: 992px) {
+  .row {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .matter {
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 80%;
+    height: 100%;
+  }
+
+  .big {
+    font-size: 18px;
+  }
+  .info p {
+    font-size: 15px;
+  }
+  .photo {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+  }
+  .photo img {
+    height: 300px;
+  }
+  .information {
+    width: 80%;
+    margin: 30px auto;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .clgname {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    background-color: #8d4b6e;
+    color: #ffffff;
+    flex-direction: column;
+  }
+  .clgname .p {
+    font-size: 30px;
+    width: 100%;
+    margin: 0px auto 10px auto;
+    display: flex;
+    text-align: center;
+  }
+  .clgname .span1 {
+    font-size: 13px;
+    text-align: center;
+  }
+  .clgname .span2 {
+    margin: 3px;
+    font-size: 13px;
+  }
+  .clgname img {
+    margin-top: 25px;
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .matter {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    height: 100%;
+    padding: 15px 5px;
+  }
+  .photo {
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+  }
+  .photo img {
+    height: 200px;
+  }
+  .information {
+    width: 80%;
+    margin: 20px auto 50px auto;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #33455f;
+  }
+}
