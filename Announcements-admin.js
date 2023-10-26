@@ -5,8 +5,8 @@ const IdDeleteButtonds = [];
 const paragraph = document.querySelectorAll("p");
 
 const anchor = document.querySelector(".info a");
-const urlInput = document.querySelector("#url-input");
-urlInput.value = anchor.href;
+// const urlInput = document.querySelector("#url-input");
+// urlInput.value = anchor.href;
 console.log(anchor.href);
 
 paragraph.forEach((para) => {

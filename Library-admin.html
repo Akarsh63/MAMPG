@@ -39,7 +39,7 @@
                 <span class="big" id="aim">Aim</span>
                 <div id="aim1" class="row-point">
                   <i class="fa-solid fa-hand-point-right i"></i>
-                  <p contenteditable="true" id="aim1">The right environment</p>
+                  <p contenteditable="true" id="aim1" class="aim-point point" >The right environment</p>
                   <i
                     id="aim1"
                     onclick="DeleteBtn(this)"
@@ -48,7 +48,7 @@
                 </div>
                 <div class="row-point" id="aim2">
                   <i class="fa-solid fa-hand-point-right i"></i>
-                  <p contenteditable="true" id="aim2">Appropiate facilities</p>
+                  <p contenteditable="true" id="aim2" class="aim-point point">Appropiate facilities</p>
                   <i
                     id="aim2"
                     onclick="DeleteBtn(this)"
@@ -57,7 +57,7 @@
                 </div>
                 <div class="row-point" id="aim3">
                   <i class="fa-solid fa-hand-point-right i"></i>
-                  <p contenteditable="true" id="aim3">
+                  <p contenteditable="true" id="aim3" class="aim-point point">
                     Support high quality teaching and learning
                   </p>
                   <i
@@ -71,7 +71,7 @@
                     placeholder="Enter your point..."
                     required
                   ></textarea>
-                  <button type="submit">ADD</button>
+                  <button type="button" class="add-point" id="add-aim">ADD</button>
                 </form>
               </div>
               <br />
@@ -79,7 +79,7 @@
                 <span class="big" id="provides">Provides</span>
                 <div class="row-point" id="provides1">
                   <i class="fa-solid fa-hand-point-right i"></i>
-                  <p class="prov" contenteditable="true" id="provides1">
+                  <p class="prov provides-point point" contenteditable="true" id="provides1" >
                     Useful collection of learning material
                   </p>
                   <i
@@ -90,7 +90,7 @@
                 </div>
                 <div class="row-point" id="provides2">
                   <i class="fa-solid fa-hand-point-right i"></i>
-                  <p class="prov" contenteditable="true" id="provides2">
+                  <p class="prov provides-point point" contenteditable="true" id="provides2">
                     Access to computerized information and sources
                   </p>
                   <i
@@ -101,8 +101,8 @@
                 </div>
                 <div class="row-point" id="provides3">
                   <i class="fa-solid fa-hand-point-right i"></i>
-                  <p class="prov" contenteditable="true" id="provides3">
-                    Audio/Vedio learning facility
+                  <p class="prov provides-point point" contenteditable="true" id="provides3">
+                    Audio/Video learning facility
                   </p>
                   <i
                     onclick="DeleteBtn(this)"
@@ -115,7 +115,7 @@
                     placeholder="Enter your point..."
                     required
                   ></textarea>
-                  <button type="submit">ADD</button>
+                  <button type="submit" class="add-point" id="add-provides">ADD</button>
                 </form>
               </div>
             </div>
@@ -141,8 +141,13 @@
         </div>
       </div>
       <div class="btn-div">
+        <form action="" method="post" id="main-form" enctype="multipart/form-data" hidden style="display: none;">
+          <input type="submit" id="submitButton" hidden> 
+          {% csrf_token %}
+        </form>
         <button class="button-56" id="saveButton" role="button">SAVE</button>
       </div>
+
     </div>
   </body>
 </html>
