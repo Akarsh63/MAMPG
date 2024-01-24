@@ -1,168 +1,191 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Header & Footer</title>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="headerandfooter.css">
-            <script src="https://kit.fontawesome.com/e3654d5171.js" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
-        </head>
-        <body>
-            <header>
-                <div class="headerqs">
-                    <div class="header-top-containerqs">
-                         <img class="logoqs" src="https://mamcollegeofpharmacy.ac.in/images/logo1.png" alt="MAMPG Logo"/>
-                         <div class="clginfoqs">
-                             <div class="headingqs">MEDARAMETLA ANJAMMA MASTAN RAO COLLEGE OF PG</div>
-                             <div class="subheadingqs"> 
-                                 <p>Recognized by AICTE, Affiliated to Acharya Nagarjuns University</p>
-                                 <p>Kesanupalli Village, Narasaraopet(m), Palnadu(Dt), Andhra Pradesh.</p>
-                             </div>
-                         </div>
-                    </div>
-                 </div>
+<html>
 
-                 <nav class="header-top-navbarqs">
-                    <div class="nav-responsive-menuqs" id="menu1">
-                        <p>Menu</p>
-                        <div>
-                            <a onclick="menu_show()" id="menudropicon"><i class="fa-solid fa-bars" style="color: #fff;"></i></a>
-                            <a class="crossqs"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></a>
+<head>
+    <title>Header & Footer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="headerandfooter.css">
+    <script src="https://kit.fontawesome.com/e3654d5171.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerqs">
+            <div class="header-top-containerqs">
+              <div class="img-container">    
+                <img class="logoqs" src="https://mamcollegeofpharmacy.ac.in/images/logo1.png" alt="MAMPG Logo" />
+                <img class="logoqs2" src="photos\mam 1.jpg" alt="MAMPG Logo" />
+            </div>
+                <div class="clginfoqs">
+                    <div class="headingqs">MEDARAMETLA ANJAMMA MASTAN RAO COLLEGE OF PG</div>
+                    <div class="subheadingqs">
+                        <p>Recognized by AICTE, Affiliated to Acharya Nagarjuns University</p>
+                        <p>Kesanupalli Village, Narasaraopet(m), Palnadu(Dt), Andhra Pradesh.</p>
+                    </div>
+                </div>
+               
+               <img class="logoqs1" src="photos\mam 1.jpg" alt="MAMPG Logo" />
+                
+            </div>
+            
+        </div>
+     
+        
+        
+
+        <nav class="header-top-navbarqs">
+            <div class="nav-responsive-menuqs" id="menu1">
+                <p>Menu</p>
+                <div>
+                    <a onclick="menu_show()" id="menudropicon"><i class="fa-solid fa-bars" style="color: #fff;"></i></a>
+                    <a class="crossqs"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <ul class="main-navqs" id="menu2">
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">HOME</a></li>
+                <li class="main-nav-itemsqs" id="drop1" onclick="dropmenu_show(this.id)">
+                    <a href="#" class="main-nav-items-namesqs">ABOUT US <ion-icon name="chevron-down-outline"
+                            class="nav-drop-iconsqs"></ion-icon></a>
+                    <ul class="sub-navqs">
+                        <li><a href="#">About MAM</a></li>
+                        <li><a href="#">Chairman's Message</a></li>
+                        <li><a href="#">Principals's Message</a></li>
+                        <li><a href="#">Vision And Mission</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-itemsqs" id="drop4" onclick="dropmenu_show(this.id)">
+                    <a href="#" class="main-nav-items-namesqs">PROGRAMMES<ion-icon name="chevron-down-outline"
+                            class="nav-drop-iconsqs"></ion-icon></a>
+                    <ul class="sub-navqs">
+                        <div class="dropdownqs">
+                            <li class="dropdown-content-btnqs"><a href="#">MCA</a></li>
+                            <div class="dropdown-contentqs">
+                                <a href="#">Fee Structure</a>
+                                <a href="#">Application Form</a>
+                            </div>
                         </div>
-                    </div>
-                    <ul class="main-navqs" id="menu2">
-                        <li class="main-nav-itemsqs" ><a href="#" class="main-nav-items-namesqs">HOME</a></li>
-                        <li class="main-nav-itemsqs" id="drop1" onclick="dropmenu_show(this.id)">
-                            <a href="#" class="main-nav-items-namesqs">ABOUT US <ion-icon name="chevron-down-outline" class="nav-drop-iconsqs"></ion-icon></a>
-                            <ul class="sub-navqs">
-                                <li><a href="#">About MAM</a></li>
-                                <li><a href="#">Chairman's Message</a></li>
-                                <li><a href="#">Principals's Message</a></li>
-                                <li><a href="#">Vision And Mission</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-nav-itemsqs" id="drop4" onclick="dropmenu_show(this.id)">
-                            <a href="#" class="main-nav-items-namesqs">PROGRAMMES<ion-icon name="chevron-down-outline" class="nav-drop-iconsqs"></ion-icon></a>
-                            <ul class="sub-navqs"> 
-                                <div class="dropdownqs">
-                                        <li class="dropdown-content-btnqs"><a href="#">MCA</a></li>
-                                    <div class="dropdown-contentqs">
-                                        <a href="#">Fee Structure</a>
-                                        <a href="#">Application Form</a>
-                                    </div>
-                                </div>
-                                <div class="dropdownqs">
-                                    <li class="dropdown-content-btnqs"><a href="#">MBA</a></li>
-                                    <div class="dropdown-contentqs">
-                                        <a href="#">Fee Structure</a>
-                                        <a href="#">Application Form</a>
-                                      </div>
-                                </div>
-                               
-                            </ul>
-                        </li>
-                        <li class="main-nav-itemsqs" id="drop3" onclick="dropmenu_show(this.id)">
-                            <a href="#" class="main-nav-items-namesqs">ACADEMICS <ion-icon name="chevron-down-outline" class="nav-drop-iconsqs"></ion-icon></a>
-                            <ul class="sub-navqs"> 
-                                <li><a href="#">Academic Calander</a></li>
-                                <li><a href="#">Approvals</a></li>
-                                <li><a href="#">Time Tables</a></li>
-                                <li><a href="#">Results</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">GALLERY</a></li>
-                        <li class="main-nav-itemsqs" id="drop2" onclick="dropmenu_show(this.id)">
-                            <a href="#" class="main-nav-items-namesqs">FACILITIES <ion-icon name="chevron-down-outline" class="nav-drop-iconsqs"></ion-icon></a>
-                            <ul class="sub-navqs"> 
-                                <li><a href="#">Library</a></li>
-                                <li><a href="#">Sport</a></li>
-                                <li><a href="#">Canteen</a></li>
-                                <li><a href="#">Transport</a></li>
-                                <li><a href="#">Staff Welfare Features</a></li>
-                            </ul>
-                        </li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">FACULTY</a></li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">COMMITTIES</a></li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">AICTE</a></li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">PLACEMENTS</a></li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">ANNOUNCEMENTS</a></li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">CONTACT</a></li>
-                        <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">FAQ</a></li>
-                      </ul>
-                </nav>
-            </header>
-           
-            <footer>
-                    <div class='footer_aboutqs'>
-                        <img class="logofqs" src="https://mamcollegeofpharmacy.ac.in/images/logo1.png" alt="MAMPG Logo"/>
-                        <h1 class='footnqs'>M.A.M College Of P.G</h1>
-                    </div>
-                    <div class='footerqs'>
-                        <div class='footlinksqs'>
-                            <p class='heading_footerqs'>Get in Touch with us</p>
-                            <ul>
-                                <li class='lilistqs'><a href="#"><ion-icon name="call-outline" class="footicons"></ion-icon></i>6301425803 / 9951420612</a></li>
-                                <li class='lilistqs'><a href="#"><ion-icon name="mail-outline" class="footicons"></ion-icon>prins2mam@gmail.com</a></li>
-                                <li class='lilistqs'><a href="#"><ion-icon name="location-outline" class="footicons"></ion-icon>Kesanupalli, Narasaraopet, Andhra Pradesh 522601</a></li>
-                            </ul>
+                        <div class="dropdownqs">
+                            <li class="dropdown-content-btnqs"><a href="#">MBA</a></li>
+                            <div class="dropdown-contentqs">
+                                <a href="#">Fee Structure</a>
+                                <a href="#">Application Form</a>
+                            </div>
                         </div>
 
-                        <div class='footlinksqs'>
-                            <p class='heading_footerqs'>Quick Links</p>
-                            <ul class='ulistqs'>
-                                <li class='lilistqs'><a href="#">Home</a></li>
-                                <li class='lilisttqs' id="about-us">
-                                    <a href="#" >About us<ion-icon name="chevron-down-outline" class="nav-drop-iconsqs navdropqs"></ion-icon></a>
-                                    <ul class='sublistqs'>
-                                        <li class='sublist-itemqs'><a href="#">About MAM</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Chairman's Message</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Principals's Message</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Vision And Mission</a></li>
-                                    </ul>
-                                </li>
-                                <li class='lilisttqs' id="acads">
-                                    <a href="#" >Academics<ion-icon name="chevron-down-outline" class="nav-drop-iconsqs navdropqs"></ion-icon></a>
-                                    <ul class='sublistqs'>
-                                        <li class='sublist-itemqs'><a href="#">Academic Calander</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Approvals</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Time Tables</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Results</a></li>
-                                    </ul>
-                                </li>
-                                <li class='lilistqs'><a href="#">Gallery</a></li>
-                                <li class='lilisttqs' id="facilities">
-                                    <a href="#" >Facilities<ion-icon name="chevron-down-outline" class="nav-drop-iconsqs navdropqs"></ion-icon></a>
-                                    <ul class='sublistqs'>
-                                        <li class='sublist-itemqs'><a href="#">Library</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Sport</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Canteen</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Transport</a></li>
-                                        <li class='sublist-itemqs'><a href="#">Staff Welfare Features</a></li>
-                                    </ul>
-                                </li>
-                                <li class='lilistqs'><a href="#">Faculty</a></li>
-                                <li class='lilistqs'><a href="#">Announcements</a></li>
-                                <li class='lilistqs'><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                        
-                        
-                        <div clase='footlinksqs'>
-                            <p class='heading_footerqs'>Social Links</p>
-                            <ul>
-                                <li class='lilistqs'><a href="#">Facebook</a></li>
-                                <li class='lilistqs'><a href="#">Instagram</a></li>
-                                <li class='lilistqs'><a href="#">Twitter</a></li>
-                            </ul>
-                        </div>
-                        <div class='footlinksqs'>
-                            <a href="#" class="grievanceqs">Grievance Form</a>
-                            
-                        </div>
-                    </div>
-            </footer>
+                    </ul>
+                </li>
+                <li class="main-nav-itemsqs" id="drop3" onclick="dropmenu_show(this.id)">
+                    <a href="#" class="main-nav-items-namesqs">ACADEMICS <ion-icon name="chevron-down-outline"
+                            class="nav-drop-iconsqs"></ion-icon></a>
+                    <ul class="sub-navqs">
+                        <li><a href="#">Academic Calander</a></li>
+                        <li><a href="#">Approvals</a></li>
+                        <li><a href="#">Time Tables</a></li>
+                        <li><a href="#">Results</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">GALLERY</a></li>
+                <li class="main-nav-itemsqs" id="drop2" onclick="dropmenu_show(this.id)">
+                    <a href="#" class="main-nav-items-namesqs">FACILITIES <ion-icon name="chevron-down-outline"
+                            class="nav-drop-iconsqs"></ion-icon></a>
+                    <ul class="sub-navqs">
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Canteen</a></li>
+                        <li><a href="#">Transport</a></li>
+                        <li><a href="#">Staff Welfare Features</a></li>
+                    </ul>
+                </li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">FACULTY</a></li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">COMMITTIES</a></li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">AICTE</a></li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">PLACEMENTS</a></li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">ANNOUNCEMENTS</a></li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">CONTACT</a></li>
+                <li class="main-nav-itemsqs"><a href="#" class="main-nav-items-namesqs">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <script src="headerandfooter.js"></script>
-        </body>
-    </html>
+    <footer>
+        <div class='footer_aboutqs'>
+            <img class="logofqs" src="https://mamcollegeofpharmacy.ac.in/images/logo1.png" alt="MAMPG Logo" />
+            <h1 class='footnqs'>M.A.M College Of P.G</h1>
+        </div>
+        <div class='footerqs'>
+            <div class='footlinksqs'>
+                <p class='heading_footerqs'>Get in Touch with us</p>
+                <ul>
+                    <li class='lilistqs'><a href="#"><ion-icon name="call-outline"
+                                class="footicons"></ion-icon></i>6301425803 / 9951420612</a></li>
+                    <li class='lilistqs'><a href="#"><ion-icon name="mail-outline"
+                                class="footicons"></ion-icon>prins2mam@gmail.com</a></li>
+                    <li class='lilistqs'><a href="#"><ion-icon name="location-outline"
+                                class="footicons"></ion-icon>Kesanupalli, Narasaraopet, Andhra Pradesh 522601</a></li>
+                </ul>
+            </div>
+
+            <div class='footlinksqs'>
+                <p class='heading_footerqs'>Quick Links</p>
+                <ul class='ulistqs'>
+                    <li class='lilistqs'><a href="#">Home</a></li>
+                    <li class='lilisttqs' id="about-us">
+                        <a href="#">About us<ion-icon name="chevron-down-outline"
+                                class="nav-drop-iconsqs navdropqs"></ion-icon></a>
+                        <ul class='sublistqs'>
+                            <li class='sublist-itemqs'><a href="#">About MAM</a></li>
+                            <li class='sublist-itemqs'><a href="#">Chairman's Message</a></li>
+                            <li class='sublist-itemqs'><a href="#">Principals's Message</a></li>
+                            <li class='sublist-itemqs'><a href="#">Vision And Mission</a></li>
+                        </ul>
+                    </li>
+                    <li class='lilisttqs' id="acads">
+                        <a href="#">Academics<ion-icon name="chevron-down-outline"
+                                class="nav-drop-iconsqs navdropqs"></ion-icon></a>
+                        <ul class='sublistqs'>
+                            <li class='sublist-itemqs'><a href="#">Academic Calander</a></li>
+                            <li class='sublist-itemqs'><a href="#">Approvals</a></li>
+                            <li class='sublist-itemqs'><a href="#">Time Tables</a></li>
+                            <li class='sublist-itemqs'><a href="#">Results</a></li>
+                        </ul>
+                    </li>
+                    <li class='lilistqs'><a href="#">Gallery</a></li>
+                    <li class='lilisttqs' id="facilities">
+                        <a href="#">Facilities<ion-icon name="chevron-down-outline"
+                                class="nav-drop-iconsqs navdropqs"></ion-icon></a>
+                        <ul class='sublistqs'>
+                            <li class='sublist-itemqs'><a href="#">Library</a></li>
+                            <li class='sublist-itemqs'><a href="#">Sport</a></li>
+                            <li class='sublist-itemqs'><a href="#">Canteen</a></li>
+                            <li class='sublist-itemqs'><a href="#">Transport</a></li>
+                            <li class='sublist-itemqs'><a href="#">Staff Welfare Features</a></li>
+                        </ul>
+                    </li>
+                    <li class='lilistqs'><a href="#">Faculty</a></li>
+                    <li class='lilistqs'><a href="#">Announcements</a></li>
+                    <li class='lilistqs'><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+
+            <div clase='footlinksqs'>
+                <p class='heading_footerqs'>Social Links</p>
+                <ul>
+                    <li class='lilistqs'><a href="#">Facebook</a></li>
+                    <li class='lilistqs'><a href="#">Instagram</a></li>
+                    <li class='lilistqs'><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+            <div class='footlinksqs'>
+                <a href="#" class="grievanceqs">Grievance Form</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="headerandfooter.js"></script>
+</body>
+
+</html>
